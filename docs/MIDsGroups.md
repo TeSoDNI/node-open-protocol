@@ -26,6 +26,7 @@
 |automaticManualMode|401|400|403|402|
 |openProtocolCommandsDisabled|421|420|423|422|
 |motorTuningResultData|501|500|503|502|
+|traceData|900|900|9|900|
 
 
 ## Request
