@@ -230,10 +230,6 @@ class OpenProtocolParser extends Transform {
 
             ptr += (length - 20) + 1;
 
-            if (obj.mid === 900) {
-                ptr = ptr - 1;
-            }
-
             if (this.rawData) {
                 obj._raw = chunk.slice(startPtr, ptr);
             }

@@ -1071,13 +1071,12 @@ class SessionControlClient extends EventEmitter {
 
             this.emit("__SubscribeData__", obj);
 
-            if (!this.useLinkLayer) {
-                this.ll.write({
-                    mid: midGroupList[dataGroup].ack,
-                    isAck: true
-                });
-                return;
-            }
+            this.ll.write({
+                mid: midGroupList[dataGroup].ack,
+                isAck: true
+            });
+
+            return;
         }
 
         if (replyGroup !== undefined) {
